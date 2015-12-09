@@ -1,6 +1,6 @@
 # Go Playground Emacs client
 
-go-playground.el provide interface to Go Playground (https://play.golang.org).
+go-playground-cli.el is Go Playground (https://play.golang.org) client tool.
 You can compile and run a Go program like `go run prog.go`.
 
 
@@ -12,16 +12,20 @@ You can compile and run a Go program like `go run prog.go`.
 ## Install
 
     $ git clone https://github.com/kosh04/emacs-go-playground.git
-    $ cat .emacs
-    ...
+    $ edit .emacs
     (add-to-list 'load-path "/path/to/emacs-go-playground/")
-    (require 'go-playground)
+    (require 'go-playground-cli)
+
+or el-get
+
+    (require 'el-get)
+    (el-get-bundle go-playground-cli :url "https://github.com/kosh04/emacs-go-playground/raw/master/go-playground-cli.el")
 
 
 ## Command
 
-- `M-x go-playground-run-file`         : Compile and run selected go program.
-- `M-x go-playground-run-current-file` : Compile and run current go program.
+- `M-x go-playground-cli-run`              : Compile and run selected go program.
+- `M-x go-playground-cli-run-current-file` : Compile and run current go program.
 
 If you installed [go-mode](https://github.com/dominikh/go-mode.el), enable call from the menu-bar.
 
