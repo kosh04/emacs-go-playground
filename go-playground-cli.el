@@ -38,6 +38,7 @@
 (require 'f)
 (require 'go-mode nil t)                ; optional
 
+;;;###autoload
 (define-namespace go-playground-cli-
 
 (defvar compile-url "http://play.golang.org/compile"
@@ -98,7 +99,7 @@
   (run buffer-file-name))
 
 :autoload
-(with-eval-after-load "go-mode"
+(with-eval-after-load 'go-mode
   ;; register menu
   (define-key (lookup-key go-mode-map [menu-bar Go Playground]) [Run]
     `("Run" . ,#'run-current-file)))
