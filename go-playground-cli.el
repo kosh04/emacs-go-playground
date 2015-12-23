@@ -4,7 +4,7 @@
 
 ;; Author: KOBAYASHI Shigeru (kosh) <shigeru.kb@gmail.com>
 ;; Version: 1.1
-;; Package-Requires: ((emacs "24") (request "0.2.0") (deferred "0.3.2") (names "20151201.404") (s "1.10.0") (f "0.17.2") (let-alist "1.0.4") (cl-lib "1.0"))
+;; Package-Requires: ((emacs "24") (request "0.2.0") (deferred "0.3.2") (names "20151201.404") (s "1.10.0") (f "0.17.2") (let-alist "1.0.4") (cl-lib "0.5"))
 ;; Keyword: extensions, tools
 ;; Created: 2015-10-19
 ;; License: MIT
