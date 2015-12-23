@@ -1,4 +1,4 @@
-;;; go-playground-cli.el  --- Go Playground client tool  -*- lexical-binding: t -*-
+;;; go-playground-cli.el --- Go Playground client tool  -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2015 KOBAYASHI Shigeru
 
