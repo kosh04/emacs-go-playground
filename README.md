@@ -1,5 +1,7 @@
 # Go Playground Emacs client
 
+[![MELPA](https://melpa.org/packages/go-playground-cli-badge.svg)](https://melpa.org/#/go-playground-cli)
+
 go-playground-cli.el is Go Playground (https://play.golang.org) client tool.
 You can compile and run a Go program like `go run prog.go`.
 
@@ -16,10 +18,9 @@ You can compile and run a Go program like `go run prog.go`.
     (add-to-list 'load-path "/path/to/emacs-go-playground/")
     (require 'go-playground-cli)
 
-or el-get
+or [MELPA](https://melpa.org/#/getting-started) package
 
-    (require 'el-get)
-    (el-get-bundle go-playground-cli :url "https://github.com/kosh04/emacs-go-playground/raw/master/go-playground-cli.el")
+    M-x package-install -> go-playground-cli
 
 
 ## Command
