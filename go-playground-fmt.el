@@ -13,7 +13,7 @@
 ;; (url-handler-mode +1)
 
 (defvar go-playground-fmt-url
-  "http://play.golang.org/fmt")
+  "https://play.golang.org/fmt")
 
 (defun go-playground-fmt-request (code)
   (let ((url-request-method "POST")

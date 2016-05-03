@@ -1,9 +1,9 @@
 ;;; go-playground-cli.el --- Go Playground client tool  -*- lexical-binding: t -*-
 
-;; Copyright (C) 2015 KOBAYASHI Shigeru
+;; Copyright (C) 2015-2016 KOBAYASHI Shigeru
 
 ;; Author: KOBAYASHI Shigeru (kosh) <shigeru.kb@gmail.com>
-;; Version: 1.1
+;; Version: 1.2
 ;; Package-Requires: ((emacs "24") (request "0.2.0") (deferred "0.3.2") (names "20151201.404") (s "1.10.0") (f "0.17.2") (let-alist "1.0.4") (cl-lib "0.5"))
 ;; Keyword: extensions, tools
 ;; Created: 2015-10-19
@@ -19,8 +19,9 @@
 
 ;;; Change Log:
 
-;; 2015-12-03  v1.1  rename to go-playground-cli.el
-;; 2015-10-19  v1.0  initial release
+;; v1.2  2016-05-03  change compile url to HTTPS
+;; v1.1  2015-12-03  rename to go-playground-cli.el
+;; v1.0  2015-10-19  initial release
 
 ;;; Code:
 
@@ -41,8 +42,15 @@
 ;;;###autoload
 (define-namespace go-playground-cli-
 
-(defvar compile-url "http://play.golang.org/compile"
-  "Endpoint URL for Go Playground compile.")
+(defgroup go-playground-cli ()
+  "Go Playground client tool."
+  :prefix "go-playground-cli-"
+  :group 'tools)
+
+(defcustom compile-url "https://play.golang.org/compile"
+  "Endpoint URL for Go Playground compile."
+  :group 'go-playground-cli
+  :type 'string)
 
 (defvar -buffer-name "*Go Playground*"
   "Output buffer for go playground client.")
